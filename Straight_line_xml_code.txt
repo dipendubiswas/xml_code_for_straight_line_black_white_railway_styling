@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0">
+  <sld:NamedLayer>
+    <sld:Name>Railway Styler</sld:Name>
+    <sld:UserStyle>
+      <sld:Name>Railway Styler</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Name>Railway Track</sld:Name>
+        <sld:Rule>
+          <sld:Title>Railway Line</sld:Title>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter> <!-- Line color (black) -->
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter> <!-- Line width -->
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        <sld:Rule>
+          <sld:LineSymbolizer>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FFFFFF</sld:CssParameter> <!-- Line color (white) -->
+              <sld:CssParameter name="stroke-width">2</sld:CssParameter> <!-- Line width -->
+              <sld:CssParameter name="stroke-dasharray">4 4</sld:CssParameter> <!-- Dash pattern (4-unit dash, 4-unit gap) -->
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </sld:NamedLayer>
+</sld:StyledLayerDescriptor>
